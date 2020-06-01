@@ -8,7 +8,12 @@ public class CarManager {
 		
 		Car renault =new Car("Renault Laguna",2000,9700,1600,Colour.WHITE);	
 		
+		Car renault2 =new Car("Renault Laguna",2000,9700,1600,Colour.WHITE);	
+		
 		System.out.println(prius);
 		System.out.println(renault);
+		
+		System.out.println(prius .equals(renault2));
+		System.out.println(renault .equals(renault2));
 	}
 }
