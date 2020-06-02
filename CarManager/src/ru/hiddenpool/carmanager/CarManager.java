@@ -10,7 +10,9 @@ public class CarManager {
 		
 		Car renault2 =new Car("Renault Laguna",2000,9700,1600,Colour.WHITE);	
 		
-		System.out.println(prius);
+		prius.addDistance(1000);
+		
+ 		System.out.println(prius);
 		System.out.println(renault);
 		
 		System.out.println(prius .equals(renault2));

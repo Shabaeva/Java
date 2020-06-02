@@ -6,6 +6,7 @@ public class Car {
 	int price;
 	int weight;
 	Colour colour;
+	private int distance = 0;
 	
 	public Car(String brand, int productionYear, int price, int weight, Colour colour) {
 		this.brand = brand;
@@ -14,12 +15,19 @@ public class Car {
 		this.weight = weight;
 		this.colour = colour;
 	}
-
+	
+	public void addDistance(int additionalDistance) {
+		distance +=additionalDistance;
+	}
+	
+	public int getDistance() {
+		return distance;
+	}
 
 	@Override
 	public String toString() {
 		return "Car [brand=" + brand + ", productionYear=" + productionYear + ", price=" + price + ", weight=" + weight
-				+ ", colour=" + colour + "]";
+				+ ", colour=" + colour + ", distance=" + distance + "]";
 	}
 
 
