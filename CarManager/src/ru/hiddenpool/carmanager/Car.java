@@ -20,6 +20,10 @@ public class Car {
 		distance +=additionalDistance;
 	}
 	
+	public void addDistance(double additionalDistance) {
+		distance +=additionalDistance;
+	}
+	
 	public int getDistance() {
 		return distance;
 	}
