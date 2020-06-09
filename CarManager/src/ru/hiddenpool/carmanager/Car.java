@@ -1,6 +1,6 @@
 package ru.hiddenpool.carmanager;
 
-public class Car {
+public abstract class Car {
 	String brand;
 	int productionYear;
 	int price;
@@ -27,15 +27,8 @@ public class Car {
 		distanceOnService +=additionalDistance;
 	}
 	
-	public boolean isReadyToService() {
-		if(distanceOnService > 10000) {
-			return true;
-		}else {
-			return false;
-		}
-	}
-	
-	
+	public abstract boolean isReadyToService(); 
+		
 	
 	public int getDistance() {
 		return distance;

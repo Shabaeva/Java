@@ -4,11 +4,11 @@ public class CarManager {
 
 	public static void main(String[] args) {
 		
-		Car prius =new Car("Toyota Prius",2008,15000,1200, Colour.GREEEN);
+		Car prius =new PassengerCar("Toyota Prius",2008,15000,1200, Colour.GREEEN);
 		
-		Car renault =new Car("Renault Laguna",2000,9700,1600,Colour.WHITE);	
+		Car renault =new Bus("Renault Laguna",2000,9700,1600,Colour.WHITE);	
 		
-		Car renault3 =new Car("Renault Laguna",2000,9700,1600,Colour.WHITE);	
+		Car renault3 =new PassengerCar("Renault Laguna",2000,9700,1600,Colour.WHITE);	
 		
 		Bus prius2 =new Bus("Toyota Prius",2008,15000,1200, Colour.GREEEN);
 		
