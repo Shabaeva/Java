@@ -7,4 +7,15 @@ public class PassengerCar extends Car {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public boolean isReadyToService() {
+		if(distanceOnService > 15000) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	
+
 }

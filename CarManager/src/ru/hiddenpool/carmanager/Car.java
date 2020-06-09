@@ -7,6 +7,7 @@ public class Car {
 	int weight;
 	Colour colour;
 	private int distance = 0;
+	protected int distanceOnService = 0;
 	
 	public Car(String brand, int productionYear, int price, int weight, Colour colour) {
 		this.brand = brand;
@@ -18,20 +19,38 @@ public class Car {
 	
 	public void addDistance(int additionalDistance) {
 		distance +=additionalDistance;
+		distanceOnService +=additionalDistance;
 	}
 	
 	public void addDistance(double additionalDistance) {
 		distance +=additionalDistance;
+		distanceOnService +=additionalDistance;
 	}
+	
+	public boolean isReadyToService() {
+		if(distanceOnService > 10000) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	
 	
 	public int getDistance() {
 		return distance;
 	}
+	
+	
+	public int getDistanceOnService() {
+		return distanceOnService;
+	}
+
 
 	@Override
 	public String toString() {
 		return "Car [brand=" + brand + ", productionYear=" + productionYear + ", price=" + price + ", weight=" + weight
-				+ ", colour=" + colour + ", distance=" + distance + "]";
+				+ ", colour=" + colour + ", distance=" + distance + ", distanceOnService=" + distanceOnService + "]";
 	}
 
 
