@@ -1,6 +1,6 @@
 package ru.hiddenpool.carmanager;
 
-public abstract class Car {
+public abstract class Car implements Serviceable {
 	String brand;
 	int productionYear;
 	int price;
@@ -25,15 +25,11 @@ public abstract class Car {
 	public void addDistance(double additionalDistance) {
 		distance +=additionalDistance;
 		distanceOnService +=additionalDistance;
-	}
-	
-	public abstract boolean isReadyToService(); 
-		
+	}		
 	
 	public int getDistance() {
 		return distance;
-	}
-	
+	}	
 	
 	public int getDistanceOnService() {
 		return distanceOnService;
