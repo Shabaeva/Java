@@ -4,20 +4,17 @@ public class StringUnit {
 
 	public static void main(String[] args) {
 		
-		String source = "Hello world!";
+		String source = "Hello beautiful green world!";
 		
 		String[] words = source.split(" ");
-		char[] symbols = words[0].toCharArray();
-		char[] symbols2 = words[1].toCharArray();
 		
+		for (int i = 0; i< words.length;i++) {
 		
-		
-		System.out.println(words.length);
-		System.out.println(words[0]);
-		System.out.println(words[1]);
+		char[] symbols = words[i].toCharArray();
+		System.out.println(symbols);
 		System.out.println(symbols.length);
-		System.out.println(symbols2.length);
+		
 
+		}
 	}
-
 }
